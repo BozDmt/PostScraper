@@ -1,0 +1,47 @@
+login fields needed:
+
+<a class="button secondary subscriber-login-btn btn btn-size-1">: login btn
+<input id="username" type="text" name="username"> 
+<input id="login-password" type="password" name="password">
+<input class="button button-primary login-submit" type="submit" value="Вход" name="submit">
+
+login stage-DONE
+
+category fields needed:
+//show all
+<div class="mt-25 w-100"><a class="show-all-jobs-cat" href="https://dev.bg/company/jobs/operations/">Виж всички</a></div>
+//NOTE: stash in a queue and recursively traverse it
+
+category stage-DONE
+
+job listings fields needed:
+//TODO: implement a recursive fn/loop
+//get job postings: limited by pagination- traverse the pagination 
+//either by clicking next until it disappears
+<a class="facetwp-page next" data-page="2">&gt;</a>
+
+//or by changing the data page property based on the last page number, until no more left
+<a class="facetwp-page active" data-page="2">2</a>
+
+//there is no next button- the arrow is just the next page- get <a class="facetwp-page last" data-page="11">11</a>
+<a class="facetwp-page next" data-page="3">&gt;</a>
+
+//the jobs on the page
+<a href="https://dev.bg/company/jobads/cleverpine-angular-developer/" class="overlay-link ab-trigger"></a>
+
+job listings stage-DONE
+
+job application page fields needed:
+//apply button
+<a href="#" class="button button-send apply-button bold button-with-icon"><img src="https://dev.bg/wp-content/themes/jobsdevbg/images/icon-paper-plane.svg" alt="Apply" class="button-icon">Кандидатствай</a>
+
+//choose from my files
+<span class="upload-from-profile button button-with-icon">Изберете от "Моите файлове"</span>
+//form fields
+//choose the file
+<input type="checkbox" name="user_files[]" class="wpcf7-form-control wpcf7-user_files" aria-invalid="false" value="1">
+
+//submit application
+<input type="submit" value="Кандидатствай" class="wpcf7-form-control wpcf7-submit button so-has-old-value" aria-invalid="false">
+
+job application step- UNTIL FIRST APPLY BUTTON-DONE
